@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+        <CompilerGeneratedFilesOutputPath>../EntitiesGeneratedFiles</CompilerGeneratedFilesOutputPath>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\HalfLifeCommon\HalfLifeCommon.csproj" />
+      <ProjectReference Include="..\HalfLifeServer\HalfLifeServer.csproj" />
+      <ProjectReference Include="..\EntityGenerator\EntityGenerator.csproj"
+                        OutputItemType="Analyzer"
+                        ReferenceOutputAssembly="false" />
+    </ItemGroup>
+
+</Project>

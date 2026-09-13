@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <PublishAot>true</PublishAot>
+        <OutputType>Library</OutputType>
+        <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+        <SelfContained>true</SelfContained>
+        <NativeLib>Shared</NativeLib>
+        <EnableDynamicLoading>false</EnableDynamicLoading>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HalfLifeCommon\HalfLifeCommon.csproj" />
+    </ItemGroup>
+
+</Project>
